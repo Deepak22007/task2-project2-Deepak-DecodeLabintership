@@ -1,0 +1,147 @@
+:root {
+    --mocha-mousse: #A5856F;
+    --ethereal-blue: #A0D4E0;
+    --moonlit-grey: #F2F0EA;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--moonlit-grey);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2, .logo {
+    font-family: 'Inter', sans-serif;
+    color: var(--mocha-mousse);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--ethereal-blue);
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+#nav-links {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    display: block;
+}
+
+#nav-links.active {
+    display: flex;
+}
+
+#menu-toggle {
+    background-color: var(--mocha-mousse);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    border-radius: 4px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-article, .sidebar {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.primary-btn {
+    background-color: var(--mocha-mousse);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Inter', sans-serif;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.user-card {
+    background: var(--moonlit-grey);
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-left: 4px solid var(--mocha-mousse);
+    border-radius: 4px;
+}
+
+.user-card p {
+    margin: 0;
+}
+
+#response-message {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--ethereal-blue);
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 2fr 1fr;
+    }
+    #menu-toggle {
+        display: none;
+    }
+    #nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: auto;
+    }
+}

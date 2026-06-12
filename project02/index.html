@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DecodeLabs Full-Stack Integration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">DecodeLabs</div>
+            <button id="menu-toggle">Menu</button>
+            <ul id="nav-links">
+                <li><a href="#">Strategy</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Implementation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <article class="main-article">
+            <h1>The Future of Digital Craft</h1>
+            <p>Enter data below to test the active network backbone ingress pathways safely.</p>
+            
+            <form id="user-form">
+                <div class="form-group">
+                    <label for="username">Full Name</label>
+                    <input type="text" id="username" placeholder="e.g. Martina Plantijn" required>
+                </div>
+                <div class="form-group">
+                    <label for="useremail">Email Address</label>
+                    <input type="email" id="useremail" placeholder="e.g. martina@decodelabs.tech" required>
+                </div>
+                <button type="submit" class="primary-btn">Deploy to Server</button>
+            </form>
+            <p id="response-message"></p>
+        </article>
+        
+        <aside class="sidebar">
+            <h2>Live Database</h2>
+            <p>Data streaming directly via RESTful APIs:</p>
+            <div id="users-list">
+                </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DecodeLabs | Greater Lucknow, India</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
